@@ -2,69 +2,87 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Мое резюме</title>
-	<meta name="keywords" content="Резюме, маркетолог, менеджер, рекламист">
-	<meta name="description" content="Ищу работу по специальности маркетолог рекламист"> 
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<!-- Header страницы -->
-	<header>
-		<h1>Мое резюме на должность Рекламиста</h1>
-		<img src="img/myphoto.jpg" alt="Мое фото">
-		<p>Увеличим продажи вместе!</p>
-	</header>
-	<!-- Главная навигация по Резме -->
-	<nav>
-		<ul>
-			<li><a href="#">Главная</a></li>
-			<li><a href="#">Образование</a></li>
-			<li><a href="#">Опыт работы</a></li>
-			<li><a href="#">Навыки</a></li>
-		</ul>
-	</nav>
-	<!-- Основное содержание Резюме -->
-	<main>
-		<h2>Образование</h2>
-		<p>ЗНТУ <br>
-		Факультет: Гуманитарный факультет <br>
-		Специальность: Международные экономические отношения</p>
-		<h2>Опыт работы</h2>
-		<p>East west industries S.R.O. (Чехия)<br>
-		2014-2017<br>
-		Должность: Менеджер, Дизайнер, Маркетолог<br>
-		Milkyday.com <a href="http://www.milkyday.com/">(http://www.milkyday.com)</a></p>
-		<p>Motor Sich<br>
-		2009-2014<br>
-		Должность: Менеджер, рекламист</p>
-		<h2>Навыки</h2>
-		<ul>
-			<li>Photoshop</li>
-			<li>Adobe Premiere Pro</li>
-			<li>InDesign</li>
-		</ul>
-		</main>
-		<!-- Статья -->
-		<article>
+	<!-- Первая секция -->
+	<section id="first">
+		<div class="container">
 			<header>
-			<h1>Что у меня новенького</h1>
-			<!-- Дата публикации статьи -->
-			<time datetime="2017-07-18T14:07:15">18 Июля</time>
+				<div class="mail">
+					bondarevich@gmail.com
+				</div>
+				<div class="logo">
+					<span>рома</span> бондаревич
+				</div>
+				<div class="phone">
+					+(38) 099 202 73 70
+				</div>
 			</header>
-			<p>Пошел на курсы в Beetroot Academy</p>
-			<!-- Подзаголовок страицы -->
-			<h2>Делаю первые шаги</h2>
-			<p>Прохожу курс Введение в Html</p>
-			<footer>
-				<a href="#">Читать далее</a>
-				<a href="#">Комментарии</a>
-			</footer>
-		</article>
-		<!-- Подвал сайта -->
-		<footer>
-			<p class="copyright"> 2017 Roma Copyright</p>
-		</footer>
-	
+			<!-- offer -->
+			<h1>
+				<span>Front-end web development</span> HTML5, CSS3, JS
+			</h1>
+			<a class="button" href="#" target="_blank">Отправить предложение</a>
+		</div>
+	</section>
+	<!-- Вторая секция -->
+	<section id="about">
+		<div class="container">
+			 <h2>
+			 	кто я такой
+			 </h2>
+			 <img src="img/me.png" alt="мое фото" class="photo" title="Фото пацана">
+			 <h3 class="about-title">
+			 	обо мне
+			 </h3>
+			 <p class="about-text">
+			 	<span>Образование:</span><br>
+				ЗНТУ, Гуманитарный факультет, Международные экономические отношения<br>
+				<span>Опыт работы:</span><br>
+				East west industries S.R.O. (Чехия)
+				2014-2017<br>
+				Должность: Менеджер, Дизайнер, Маркетолог<br>
+				Milkyday.com <a href="http://www.milkyday.com/">(http://www.milkyday.com)</a><br>
+				<span>Навыки:</span><br>
+				Photoshop, Adobe Premiere Pro, InDesign
 
+					
+
+			</p>
+			<!-- Социальные иконки -->
+			<div class="social-block clearfix">
+				<a class="social vk" href="#">
+					<img src="img/vk.png" alt="вк">
+				</a>
+				<a class="social fb" href="#">
+					<img src="img/fb.png" alt="фейсбук">
+				</a>
+				<a class="social yt" href="#">
+					<img src="img/yt.png" alt="ютуб">
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- Третья секция -->
+	<section id="order">
+		<div class="container">
+			<h2>заказать мои услуги</h2>
+			<form class="form">
+				<input type="text" placeholder="Введите имя" class="cell">
+				<input type="email" placeholder="Введите почту" class="cell">
+				<input type="tel" placeholder="Введите телефон" class="cell">
+			</form>
+			<button type="submit" class="button">Отправить запрос</button>
+		</div>
+	</section>
+	<!-- Четвертая секция -->
+	<footer>
+		<div class="container">
+
+		</div>
+	</footer>
 	
 </body>
 </html>
